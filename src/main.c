@@ -40,7 +40,7 @@ int main() {
     char* seed = malloc(1024);
     char* hashcode;
     printf("Enter a seed: ");
-    scanf("%s", seed);
+    scanf("%[^\n]", seed);
     hashcode = mkhashcode(seed);
     printf("Result: ");
     print(hashcode);
